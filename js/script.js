@@ -512,8 +512,8 @@ function afficheTechno(e){
     if(iconeCentre){
         return;
     }
-    let img = e.path[3];
-    let a = e.path[2];
+    let img = e.composedPath()[3];
+    let a = e.composedPath()[2];
     let p = img.children[1];
     img.style.left = '50%';
     img.style.top = '50%';
@@ -531,9 +531,11 @@ let menuDeroule = false;
 function menuBurger(){
     if(!menuDeroule){
         document.getElementById("menuBurger").style.width = "50%";
+        document.getElementById("menuBurger").style.padding = "10px";
         
     }else{
         document.getElementById("menuBurger").style.width = "0";
+        document.getElementById("menuBurger").style.padding = "0";
     }
     menuDeroule = !menuDeroule;
 }

@@ -94,6 +94,7 @@ a:hover {
     width: 0;  
     display: none;
     text-align: left; 
+    padding: 0;
 }
 #menuBurger ul {
     overflow: hidden;
@@ -756,7 +757,9 @@ input[value="6"]:checked ~ #descProj6 { display: block; }
         display: block;
         background-color: #FFFFFF;          
         position: fixed;
-        z-index: 12;   
+        z-index: 12; 
+        border-radius: 10px;
+        margin: 10px;
     }
     #menuBurger span {
         text-shadow: 1px -1px 2px #efdfd0;                     
